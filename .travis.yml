@@ -3,9 +3,9 @@ before_install:
   texlive-latex-extra texlive-science texlive-fonts-extra texlive-latex-recommended
   dvipng texlive-lang-cyrillic latex-beamer
 script:
-- make
+- make < /dev/null
 - rm -rf */*.pdf
-- make
+- make < /dev/null
 before_deploy:
 - mkdir build
 - cp */*.pdf build/
