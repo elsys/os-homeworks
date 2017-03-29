@@ -1,0 +1,123 @@
+
+\usepackage{cmap}
+%~ \usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,bulgarian]{babel}
+\selectlanguage{bulgarian}
+
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{pgf}
+% \usepackage{hyperref}
+\usepackage[unicode,colorlinks=true]{hyperref}
+
+\hypersetup{
+	colorlinks=true,
+	unicode=true
+}
+
+\lstset{language=C++, 
+  numbers=none, 
+  numberstyle=\tiny,
+  stepnumber=1, 
+  numbersep=3pt, 
+  tabsize=2, 
+  texcl,
+  extendedchars=true, inputencoding=utf8,
+  basicstyle=\ttfamily,
+  identifierstyle=\ttfamily,
+  keywordstyle=\sffamily\bfseries,
+  backgroundcolor=\color[rgb]{1,1,0.845},
+  escapeinside={/*@}{@*/}}
+
+\usepackage{algpseudocode}
+
+\newcommand{\Cpp}{{\ttfamily\bfseries C++}}
+\newcommand{\CC}{{\ttfamily\bfseries C}}
+
+
+%\logo{\includegraphics[height=0.4cm]{../macros/logo_elsys.png}}
+
+%\titlegraphic{\href{http://creativecommons.org/licenses/by-sa/3.0/}{\includegraphics{pics/cc.png}}}
+
+% \newcommand{\lubo}{%
+% \author[Л. Чорбаджиев]{Любомир Чорбаджиев\\ 
+% \texttt{lchorbadjiev@elsys-bg.org}}}
+% \institute[ELSYS] 
+% {
+% Технологично училище "Електронни системи" \\
+% Технически университет --- София
+% }}
+% \newcommand{\lubo}{%
+% \author{Любомир Чорбаджиев\\ 
+% \texttt{lchorbadjiev@elsys-bg.org}}
+% }
+
+% \newcommand{\ie}{т.~е.\ }
+
+% \newcounter{probcounter}[section]
+% \newenvironment{prob}[1][]%
+%         {\smallskip%
+%          \noindent\refstepcounter{probcounter}%
+%           \textbf{\theprobcounter${}^{#1}$.}\ }%
+%    {\medskip}
+
+
+% \usepackage{tikz}
+% \usetikzlibrary{arrows,shapes.misc,calc,backgrounds,fit,decorations.pathmorphing,positioning,chains,scopes,topaths,automata,shapes,trees}
+
+% \mode<article>
+% {
+% 
+% }
+% 
+% \mode<presentation>
+% {
+%   \usetheme[secheader=true]{Madrid}
+%   \usecolortheme{crane}
+%   \usefonttheme[onlylarge]{structurebold}
+%   \setbeamercovered{transparent}
+% }
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\newcommand{\ostitlepage}[1]{%
+\pagenumbering{roman}
+\thispagestyle{empty}
+\begin{titlepage}
+\begin{center}
+ 
+% Upper part of the page
+\textsc{Технологично училище ``Електронни системи''\\Технически университет -- София}\\[2cm]
+ 
+\textsc{\Large Операционни системи}\\[1.5cm]
+ 
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries {{#1}}}\\[0.4cm]
+ 
+\HRule \\[1.5cm]
+ 
+% Author and supervisor
+% \textsc{Любомир Чорбаджиев}\\
+\texttt{elsys.os.2015@gmail.com}\\[1cm]
+
+%\includegraphics[width=0.15\textwidth]{./pics/cc}\\[1cm]
+\href{http://creativecommons.org/licenses/by-sa/3.0/}{\includegraphics{../pics/cc.png}}\\[1cm] 
+\vfill
+ 
+% Bottom of the page
+{\large \today}
+ 
+\end{center}
+ 
+\end{titlepage}
+\pagenumbering{arabic}
+}%\ostitlepage{}
+
+\usepackage[hscale=0.7,vscale=0.8]{geometry}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
