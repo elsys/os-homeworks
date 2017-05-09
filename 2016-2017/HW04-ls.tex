@@ -55,14 +55,12 @@ $ ls a.txt b.txt /usr/share/texmf/tex /usr/share/texmf/metapost/
 d latex
 \end{verbatim}
 
-\subsection{Поддръжка на {\ttfamily -a} (20 точки)}
-Командата \lstinline{ls} трябва да поддържа незадължителния аргумент \lstinline{-a}.
+\subsection{Поддръжка на {\ttfamily -A} (20 точки)}
+Командата \lstinline{ls} трябва да поддържа незадължителния аргумент \lstinline{-A}.
 
-При използване на опцията \lstinline{-a} командата трябва да извежда и скритите файлове. Например:
+При използване на опцията \lstinline{-A} командата трябва да извежда и скритите файлове без ".." и ".". Например:
 \begin{verbatim}
 $ ls -a
-d .
-d ..
 - a.out
 - a.txt
 - b.txt
@@ -125,7 +123,7 @@ d dir11
 \end{verbatim}
 
 \subsection{Комбинация от опции}
-Възможна е произволна комбинация от опции. Например: ls -lRa, ls -al, ..
+Възможна е произволна комбинация от опции. Например: ls -lRА, ls -Аl, ..
 
 \subsection{Обработка на грешки (20 точки)}
 
