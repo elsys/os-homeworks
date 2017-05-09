@@ -1,4 +1,4 @@
-all: 2016-2017/HW03-threads.pdf
+all: 2016-2017/HW03-threads.pdf 2016-2017/HW04-ls.pdf
 
 %.pdf: %.tex
 	if [ -n "$(dir $<)" ]; then echo $(dir $<); cd $(dir $<); fi; pdflatex $(notdir $<); cd -
