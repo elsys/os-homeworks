@@ -131,14 +131,14 @@ d dir11
 съобщението трябва да бъде оформено по следния начин:
 \begin{verbatim}
 $ ls aa
-ls: cannot access aa: No such file or directory
+ls: cannot access 'aa': No such file or directory
 \end{verbatim}
 
 Ако на програмата се предаде име на директория, която потребителят няма права да отвори, то
 съобщението трябва да бъде оформено по следния начин:
 \begin{verbatim}
 $ ls forbidden/
-ls: cannot open directory forbidden/: Permission denied
+ls: cannot open directory 'forbidden/': Permission denied
 \end{verbatim}
 
 \color{white}
