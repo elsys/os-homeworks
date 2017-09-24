@@ -1,0 +1,27 @@
+title: OS Tasks
+email: emildudev@gmail.com
+lang: bg-BG
+description: >
+  OS Markdown tasks
+url: ""
+
+collections:
+  tasks:
+    output: true
+    permalink: ":collection/:year/:month/:day/:title"
+
+defaults:
+  - scope:
+      path: ""
+      type: "tasks"
+    values:
+      layout: "task"
+      problem_type: "none"
+
+# Build settings
+strict_front_matter: true
+markdown: kramdown
+plugins:
+
+liquid:
+  error_mode: strict
