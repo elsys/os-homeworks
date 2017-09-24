@@ -4,16 +4,16 @@
 }
 
 * { margin: 0; padding: 0; }
-ol, ul { list-style: none; }
 p { text-indent: 2em; margin: .5em 0; }
 pre { background-color: #ffff99; margin: 1em 0; padding: .5em; }
 code { font-family: "Latin Modern Math Mono", monospace; }
 pre code { display: inline-block; line-height: 1; }
 
 ol { margin: 1em 0; counter-reset: item; }
-ol li { margin: 1em 0; display: block; }
-ol li ol li { page-break-inside: avoid; }
-ol li::before { content: counters(item, ".") " "; counter-increment: item; }
+ol > li { margin: 1em 0; display: block; }
+ol > li ol > li { page-break-inside: avoid; }
+ol > li ol > li ul { margin-left: 3em; }
+ol > li::before { content: counters(item, ".") " "; counter-increment: item; }
 li > p:first-child { display: inline; }
 
 html, body { width: 100%; min-height: 100%; }
