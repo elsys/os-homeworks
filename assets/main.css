@@ -1,12 +1,7 @@
-@font-face {
-    font-family: "Computer Modern";
-    src: url("fonts/cmunrm.woff") format('woff');
-}
-
 * { margin: 0; padding: 0; }
 p { text-indent: 2em; margin: .5em 0; }
 pre { background-color: #ffff99; margin: 1em 0; padding: .5em; }
-code { font-family: "Latin Modern Math Mono", monospace; }
+code, .author { font-family: "Latin Modern Math Mono", monospace; }
 pre code { display: inline-block; line-height: 1; }
 
 ol { margin: 1em 0; counter-reset: item; }
@@ -18,14 +13,15 @@ li > p:first-child { display: inline; }
 
 html, body { width: 100%; min-height: 100%; }
 
-body { font: 10pt/1.5 "Computer Modern", "Latin Modern Math", serif; hyphens: auto; text-align: justify; text-justify: inter-word; }
+body { font: 10pt/1.5 "Latin Modern Math", serif; hyphens: auto; text-align: justify; text-justify: inter-word; }
 
 .task-header { position: relative; overflow: hidden; text-align: center; page-break-after: always; }
 .task-header h3 { font-weight: normal; font-size: 11.05pt; font-variant: small-caps; margin: 3em 0; }
 .task-header h2 { font-weight: normal; font-size: 14.78pt; font-variant: small-caps; margin: 3em 0; }
 .task-header h1 { font-weight: bolder; font-size: 22.02pt; margin-top: 3em; margin-bottom: 4em; padding: 1em 0; border-top: 2px solid; border-bottom: 2px solid; }
 
-.task-header .date { font-size: 11.75pt; font-variant: initial; margin-top: 15em;  }
+.task-header .date, .task-header .author { font-size: 11.75pt; font-variant: initial; }
+.task-header .date { margin-top: 15em; }
 
 .page-content > ol > li > p:first-child, .page-content > ol > li::before { font-size: 15.84pt; font-weight: bolder; }
 .page-content > ol > li > ol > li > p:first-child, .page-content > ol > li > ol > li::before { font-size: 13.5pt; font-weight: bolder; }
