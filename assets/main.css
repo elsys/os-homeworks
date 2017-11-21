@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; }
 p { text-indent: 2em; margin: .5em 0; }
 pre { background-color: #ffff99; margin: 1em 0; padding: .5em; }
-code, .author { font-family: "Latin Modern Math Mono", monospace; }
+code, .author { font-family: "Latin Modern Math Mono", monospace; white-space: pre; }
 pre code { display: inline-block; line-height: 1; }
 
 ol { margin: 1em 0; counter-reset: item; }
